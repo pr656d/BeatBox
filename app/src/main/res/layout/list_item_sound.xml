@@ -14,4 +14,5 @@
         android:layout_height="120dp"
         android:text="@{viewModel.title}"
         tools:text="Sound Name" />
+
 </layout>
