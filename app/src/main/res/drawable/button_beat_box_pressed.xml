@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
 
-    <solid
-        android:color="@color/red"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        This will change color of circle to red while pressed.
+    -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <solid
+                android:color="@color/red"/>
+        </shape>
+
+    </item>
+
+    <!--
+        This will create round dark red ring around button while pressed.
+    -->
+    <item>
+        <shape
+            android:shape="oval">
+
+            <stroke
+                android:width="4dp"
+                android:color="@color/dark_red"/>
+        </shape>
+    </item>
+
+</layer-list>
